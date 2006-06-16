@@ -1,0 +1,4 @@
+category: Devel Gnome
+requires: cygwin autoconf automake bash coreutils gettext-devel glib2-devel gnome-doc-utils gtk-doc libtool1.5 intltool pkg-config
+sdesc: "Common development files for GNOME 2.x"
+ldesc: "Common development files for GNOME 2.x"
