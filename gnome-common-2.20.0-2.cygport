@@ -1,0 +1,5 @@
+inherit gnome2
+
+DESCRIPTION="GNOME autotool helpers"
+
+DOCS="doc/usage.txt"
