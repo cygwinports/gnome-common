@@ -1,13 +1,14 @@
---- origsrc/gnome-common-2.20.0/macros2/gnome-autogen.sh	2007-09-03 16:14:29.000000000 -0500
-+++ src/gnome-common-2.20.0/macros2/gnome-autogen.sh	2008-05-25 23:04:13.984375000 -0500
-@@ -305,17 +305,18 @@
+--- origsrc/gnome-common-2.24.0/macros2/gnome-autogen.sh	2008-09-22 13:26:08.000000000 -0500
++++ src/gnome-common-2.24.0/macros2/gnome-autogen.sh	2008-10-30 13:08:11.764850200 -0500
+@@ -304,17 +304,19 @@
  #tell Mandrake autoconf wrapper we want autoconf 2.5x, not 2.13
  WANT_AUTOCONF_2_5=1
  export WANT_AUTOCONF_2_5
 -version_check autoconf AUTOCONF 'autoconf2.50 autoconf autoconf-2.53' $REQUIRED_AUTOCONF_VERSION \
++#tell Gentoo autoconf wrapper we want autoconf 2.5x, not 2.13
 +export WANT_AUTOCONF=2.5
-+version_check autoconf AUTOCONF 'autoconf autoconf2.50 autoconf-2.53' $REQUIRED_AUTOCONF_VERSION \
-     "http://ftp.gnu.org/pub/gnu/autoconf/autoconf-$REQUIRED_AUTOCONF_VERSION.tar.gz" || DIE=1
++version_check autoconf AUTOCONF 'autoconf autoconf-2.5x' $REQUIRED_AUTOCONF_VERSION \
+     "http://ftp.gnu.org/pub/gnu/autoconf/autoconf-$REQUIRED_AUTOCONF_VERSION.tar.gz"
  AUTOHEADER=`echo $AUTOCONF | sed s/autoconf/autoheader/`
  
  case $REQUIRED_AUTOMAKE_VERSION in

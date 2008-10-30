@@ -15,8 +15,8 @@ Runtime requirements:
   pkg-config
 
 Build requirements:
-  cygwin-1.5.25-11
-  cygport-0.3.10-1
+  cygwin-1.5.25-15
+  cygport-0.4.2-1
   gawk-3.1.6-1
   make-3.81-1
   sed-4.1.5-2
@@ -30,15 +30,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-common-2.20.0-X-src.tar.bz2
+  unpack gnome-common-2.24.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-common-2.20.0-X.cygport all
+  cygport ./gnome-common-2.24.0-X.cygport all
 
 This will create:
-  /usr/src/gnome-common-2.20.0-X-src.tar.bz2
-  /usr/src/gnome-common-2.20.0-X.tar.bz2
+  /usr/src/gnome-common-2.24.0-X-src.tar.bz2
+  /usr/src/gnome-common-2.24.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -48,18 +48,20 @@ Files included in the binary package:
   /usr/bin/gnome-doc-common
   /usr/share/aclocal/gnome-common.m4
   /usr/share/aclocal/gnome-compiler-flags.m4
-  /usr/share/doc/Cygwin/gnome-common-2.20.0.README
-  /usr/share/doc/gnome-common-2.20.0/ChangeLog
-  /usr/share/doc/gnome-common-2.20.0/COPYING
-  /usr/share/doc/gnome-common-2.20.0/INSTALL
-  /usr/share/doc/gnome-common-2.20.0/README
-  /usr/share/doc/gnome-common-2.20.0/usage.txt
+  /usr/share/doc/gnome-common-2.24.0/ChangeLog
+  /usr/share/doc/gnome-common-2.24.0/COPYING
+  /usr/share/doc/gnome-common-2.24.0/INSTALL
+  /usr/share/doc/gnome-common-2.24.0/README
+  /usr/share/doc/gnome-common-2.24.0/usage.txt
   /usr/share/gnome-common/data/omf.make
   /usr/share/gnome-common/data/xmldocs.make
 
 ------------------
 
 Port Notes:
+
+----- version 2.24.0-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.20.0-2 -----
 Minor Cygwin-specific patches to gnome-autogen.sh.
