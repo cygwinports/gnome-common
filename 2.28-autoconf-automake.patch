@@ -1,10 +1,9 @@
 Support Gentoo-style autoconf wrapper.
 Use existing automake version if present, else newest.
-Add support for automake-1.11 (already in git for 2.28).
 
---- origsrc/gnome-common-2.26.0/macros2/gnome-autogen.sh	2009-06-08 01:06:11.804329300 -0500
-+++ src/gnome-common-2.26.0/macros2/gnome-autogen.sh	2009-06-08 01:05:59.959651900 -0500
-@@ -304,18 +304,21 @@ done
+--- origsrc/gnome-common-2.28.0/macros2/gnome-autogen.sh
++++ src/gnome-common-2.28.0/macros2/gnome-autogen.sh
+@@ -310,19 +310,21 @@ done
  #tell Mandrake autoconf wrapper we want autoconf 2.5x, not 2.13
  WANT_AUTOCONF_2_5=1
  export WANT_AUTOCONF_2_5
@@ -17,12 +16,13 @@ Add support for automake-1.11 (already in git for 2.28).
  
  case $REQUIRED_AUTOMAKE_VERSION in
      1.4*) automake_progs="automake-1.4" ;;
--    1.5*) automake_progs="automake-1.10 automake-1.9 automake-1.8 automake-1.7 automake-1.6 automake-1.5" ;;
--    1.6*) automake_progs="automake-1.10 automake-1.9 automake-1.8 automake-1.7 automake-1.6" ;;
--    1.7*) automake_progs="automake-1.10 automake-1.9 automake-1.8 automake-1.7" ;;
--    1.8*) automake_progs="automake-1.10 automake-1.9 automake-1.8" ;;
--    1.9*) automake_progs="automake-1.10 automake-1.9" ;;
--    1.10*) automake_progs="automake-1.10" ;;
+-    1.5*) automake_progs="automake-1.11 automake-1.10 automake-1.9 automake-1.8 automake-1.7 automake-1.6 automake-1.5" ;;
+-    1.6*) automake_progs="automake-1.11 automake-1.10 automake-1.9 automake-1.8 automake-1.7 automake-1.6" ;;
+-    1.7*) automake_progs="automake-1.11 automake-1.10 automake-1.9 automake-1.8 automake-1.7" ;;
+-    1.8*) automake_progs="automake-1.11 automake-1.10 automake-1.9 automake-1.8" ;;
+-    1.9*) automake_progs="automake-1.11 automake-1.10 automake-1.9" ;;
+-    1.10*) automake_progs="automake-1.11 automake-1.10" ;;
+-    1.11*) automake_progs="automake-1.11" ;;
 +    1.5*) automake_progs="automake-1.5 automake-1.11 automake-1.10 automake-1.9 automake-1.8 automake-1.7 automake-1.6" ;;
 +    1.6*) automake_progs="automake-1.6 automake-1.11 automake-1.10 automake-1.9 automake-1.8 automake-1.7" ;;
 +    1.7*) automake_progs="automake-1.7 automake-1.11 automake-1.10 automake-1.9 automake-1.8" ;;
