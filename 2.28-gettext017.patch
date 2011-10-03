@@ -2,12 +2,13 @@ Gettext macros before 0.17 conflict with libtool-2.2
 
 --- origsrc/gnome-common-2.28.0/macros2/gnome-autogen.sh	2010-06-01 16:52:37.447865200 -0500
 +++ src/gnome-common-2.28.0/macros2/gnome-autogen.sh	2010-06-01 16:56:04.468706100 -0500
-@@ -414,7 +414,7 @@ for configure_ac in $configure_files; do
+@@ -414,7 +414,8 @@ for configure_ac in $configure_files; do
  	elif grep "^AM_GNU_GETTEXT" $basename >/dev/null; then
  	   if grep "^AM_GNU_GETTEXT_VERSION" $basename > /dev/null; then
  	   	printbold "Running autopoint..."
 -		autopoint --force || exit 1
-+		autopoint -V 0.17 --force || exit 1
++		eval gettext_$(grep ^version= $(which autopoint))
++		autopoint -V $gettext_version --force || exit 1
  	   else
  	    	printbold "Running $GETTEXTIZE... Ignore non-fatal messages."
  	    	echo "no" | $GETTEXTIZE --force --copy || exit 1
