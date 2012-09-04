@@ -1,4 +1,0 @@
-category: Devel Gnome
-requires: autoconf automake bash coreutils gettext-devel libglib2.0-devel gnome-doc-utils gtk-doc libtool intltool pkg-config yelp-tools
-sdesc: "Common development files for GNOME packages"
-ldesc: "Common development files for GNOME packages"
