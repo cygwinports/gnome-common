@@ -1,5 +1,8 @@
 inherit gnome2
 
+NAME="gnome-common"
+VERSION=3.6.0
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Common development files for GNOME packages"
 REQUIRES="autoconf automake coreutils gettext-devel libglib2.0-devel gnome-doc-utils gtk-doc libtool intltool pkg-config yelp-tools"
