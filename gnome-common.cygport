@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-common"
-VERSION=3.6.0
+VERSION=3.7.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Common development files for GNOME packages"
