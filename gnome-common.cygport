@@ -1,17 +1,13 @@
 inherit gnome2
 
 NAME="gnome-common"
-VERSION=3.7.4
-RELEASE=2
+VERSION=3.10.0
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Common development files for GNOME packages"
 REQUIRES="autoconf automake coreutils gettext-devel libglib2.0-devel gnome-doc-utils gtk-doc libtool intltool pkg-config yelp-tools"
 
-PATCH_URI="
-	2.28-autoconf-automake.patch
-	2.28-gettext017.patch
-	3.7.4-automake114.patch
-"
+ARCH=noarch
 
 src_compile() {
 	cd ${B}
