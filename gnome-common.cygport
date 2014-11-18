@@ -1,17 +1,22 @@
 inherit gnome2
 
 NAME="gnome-common"
-VERSION=3.10.0
+VERSION=3.14.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Common development files for GNOME packages"
-REQUIRES="appdata-tools autoconf automake coreutils gettext-devel libglib2.0-devel gnome-doc-utils gtk-doc libtool intltool pkg-config yelp-tools"
+REQUIRES="appdata-tools autoconf autoconf-archive automake coreutils gettext-devel libglib2.0-devel gnome-doc-utils gtk-doc libtool intltool pkg-config yelp-tools"
 
 ARCH=noarch
 
 src_compile() {
 	cd ${B}
 	gnome2_compile
+}
+
+src_install() {
+	cd ${B}
+	cyginstall AUTOCONF_ARCHIVE_MACROS=
 }
 
 DOCS="doc/usage.txt"
